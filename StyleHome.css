@@ -1,0 +1,116 @@
+* {
+    font-family: "Roboto", serif;
+}
+/*                                                                      Generale */
+body {
+    margin: 0;
+}
+
+.MainContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 0 5%;
+    flex-direction: row-reverse; /*Inverte la posizione di immagine e testo */
+    background-image: url(/Foto/Background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*                                                                    Header (Navigazione) */
+.HeaderSection {
+    position: absolute;
+    top: 30px;
+    right: 5%;
+    display: flex;
+    gap: 50px;
+}
+
+.HeaderSection h2 {
+    margin: 0;
+}
+
+.HeaderSection a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.HeaderSection a:hover {
+    color: #fe8e2c; /* Colore arancione */
+}
+
+/*                                                             Sezione Destra (Testo) */
+.RightSection {
+    margin-right: 300px;
+    height: 200px;
+    width: 350px;
+    text-align: center;
+}
+
+.Titolo {
+    font-size: 32;
+    line-height: 2;
+    font-weight: normal;
+    color: #333;
+}
+
+.Titolo span {
+    font-weight: bold;
+    color: #f58220;
+}
+
+/*                                                           Sezione Sinistra (Immagine) */
+.LeftSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px; /* Aumenta la larghezza del box */
+    height: 350px; /* Aumenta l'altezza del box */
+    background: rgba(200, 200, 200, 0.5); /* Grigio con trasparenza (50%) */
+    box-shadow: 0 2px 2px #ff6a0098;
+    border-radius: 50px;
+    max-height: 500px;
+    margin-left: 300px;
+}
+
+.LeftSection img {
+    height: 300px;
+    width: 300px;
+}
+
+/* Firma */
+.Firma {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.Firma p {
+    display: inline-block;
+    background: #B9B9B9;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.Firma img {
+    width: 50px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+/* Firma decorativa */
+.FirmaImg {
+    margin-top: 10px;
+    font-family: 'Varela', serif;
+    font-size: 0.8rem;
+    color: #999;
+}
